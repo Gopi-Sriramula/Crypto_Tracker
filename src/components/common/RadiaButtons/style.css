@@ -1,0 +1,23 @@
+.form{
+     color: var(--blue);
+     input{
+          display: none;
+     }
+     label{
+          border: 1px solid var(--blue);
+          padding: 1rem;
+          font-size: small;
+          font-weight: 500;
+     }
+     input:checked+label{
+          background-color: rgba(135, 135, 193, 0.145);
+     }
+}
+.wanted1{
+     border-top-left-radius: 0.5rem;
+     border-bottom-left-radius: 0.5rem;
+}
+.wanted2{
+     border-top-right-radius: 0.5rem;
+     border-bottom-right-radius: 0.5rem;
+}

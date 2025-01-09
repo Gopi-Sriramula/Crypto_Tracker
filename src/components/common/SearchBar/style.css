@@ -1,0 +1,20 @@
+.searchBar{
+     display: flex;
+     width: 70%;
+     padding:0.1rem 2rem;
+     margin: 1.5rem auto;
+     background-color: var(--darkgrey);
+     border-radius: 2rem;
+     align-items: center;
+     gap: 0.5rem;
+     input{
+          padding: 1rem;
+          border-radius: 2rem;
+          border: none;
+          outline: none;
+          color: var(--grey);
+          font-size: large;
+          flex: 1;
+          background-color: transparent;
+     }
+}

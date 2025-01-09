@@ -1,0 +1,96 @@
+.gridCoin{
+     min-width: 300px;
+     min-height: 300px;
+     background-color: var(--darkgrey);
+     border-radius: 0.7rem;
+     border: 2px solid transparent;
+     transition: all 0.3s;
+     text-decoration: none;
+     color: white;
+}
+.grid_div1{
+     display: flex;
+     gap: 1rem;
+     padding: 2rem;
+     padding-bottom: 1.9rem;
+     align-items: center;
+}
+.grid-logo{
+     width: 55px;
+}
+.grid_id{
+     color: var(--grey);
+     text-transform: capitalize;
+     font-weight: 600;
+     font-size: small;
+}
+.grid_symbol{
+     font-size: 1.2rem;
+     font-weight: 600;
+     text-transform: uppercase;
+}
+.grid_percentage_chnage{
+     border: 2px solid var(--green);
+     width: fit-content;
+     padding: 0.5rem 1rem;
+     border-radius: 2rem;
+     font-weight: 600;
+}
+.green{
+     border-color: var(--green);
+     color: var(--green);
+}
+.green:hover{
+     background-color: var(--green);
+     transition: all 0.3s;
+     color: var(--white);
+}
+.red:hover{
+     background-color: var(--red);
+     transition: all 0.3s;
+     color: var(--white);
+
+}
+.grid_icon{
+     padding: 0.22rem;
+     border-radius: 50%;
+     border: 2px solid var(--green);
+}
+.red{
+     border-color: var(--red);
+     color: var(--red);
+}
+.grid_div2{
+     display: flex;
+     gap: 1rem;
+     align-items: center;
+     padding-left: 2rem;
+}
+.grid_current_price{
+     font-size: large;
+     font-weight: 600;
+     padding: 1.3rem 2.5rem;
+}
+.green1{
+     color: var(--green);
+}
+.red1{
+     color: var(--red);
+}
+.grid_div3{
+     display: flex;
+     flex-direction: column;
+     gap: 0.8rem;
+     padding: 2.2rem;
+     padding-top:0rem;
+     padding-bottom: 0;
+     font-size: .9rem;
+     color: var(--grey);
+     font-weight: 600;
+}
+.green2:hover{
+     border-color:var(--green);
+}
+.red2:hover{
+     border-color: var(--red);
+}

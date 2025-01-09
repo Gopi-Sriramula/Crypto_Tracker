@@ -1,0 +1,118 @@
+.heroSection{
+     display: flex;
+     width: 93%;
+     padding: 1rem;
+     margin: auto;
+     justify-content: space-between;
+}
+.img1{
+     position: absolute;
+     z-index: 100;
+     border-bottom-right-radius:1.5rem;
+     right: 100px;
+}
+.img2{
+     position: absolute;
+     top: 50px;
+}
+.hero-div1{
+     padding-top: 1rem;
+     display: flex;
+     flex-direction: column;
+}
+.hero-div2{
+     width: 17rem;
+     position: relative;
+}
+.hero-head1{
+     font-size: 3rem;
+}
+.hero-head1:hover{
+     -webkit-text-stroke: 3px white;
+     transition: all 0.3s;
+     color: black;
+}
+.hero-head1,.hero-head2{
+     font-size: 7rem;
+}
+.hero-head2{
+    color: var(--blue);
+}
+.btn2{
+     background-color: var(--black);
+     border: 2px solid var(--blue);
+     padding: 0.6rem 2.3rem;
+}
+.hero-para{
+     color: var(--grey);
+     margin: 1rem 0rem 2rem;
+}
+.btn2:hover{
+     background: var(--blue);
+     transition: all 0.3s;
+}
+.hero-btns{
+     display: flex;
+     gap: 1rem;
+}
+@media only screen and (max-width:1130px){
+     .img1,.img2{
+          width: 90%;
+     }
+     .hero-head1,.hero-head2{
+          font-size: 6rem;
+     }
+}
+@media only screen and (max-width:1010px){
+     .hero-head1,.hero-head2{
+          font-size: 6rem;
+     }
+     .img1,.img2{
+          width: 85%;
+     }
+     .heroSection{
+          width: 100%;
+          /* padding: 1rem; */
+     }
+}
+@media only screen and (max-width:930px){
+     .hero-head1,.hero-head2{
+          font-size:4.9rem ;
+     }
+     .hero-para{
+          width: 90%;
+     }
+     .img1,.img2{
+          width: 80%;
+     }
+     .img2{
+          left: 14px;
+     }
+}
+@media only screen and (max-width:800px){
+     .heroSection{
+          flex-direction: column;
+          align-items: center;
+          gap: 4rem;
+          padding: 0;
+     }
+     .hero-div1{
+          text-align: center;
+          align-items: center;
+     }
+     .img1{
+          width: 70%;
+          right: 80px;
+     }
+     .img2{
+          width: 70%;
+          left: 70px;
+          top: 40px;
+     }
+
+}
+@media only screen and (max-width:500px){
+     .hero-head1,.hero-head2{
+          font-size: 3rem;
+     }
+}
