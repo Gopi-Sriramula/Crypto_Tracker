@@ -6,12 +6,11 @@ import TrendingDownIcon from "@mui/icons-material/TrendingDown";
 import { Link } from "react-router-dom";
 import { convertNumber } from "../../../functions/convertNumber";
 function List({ item, i }) {
-     console.log(i);
   return (
     <Link to={`/coin/${item.id}`} className="listContainer">
       <motion.tr
-        initial={{ opacity: 0,y:-50}}
-        animate={{ opacity: 1,y:0}}
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0, delay: i * 0.1 }}
         className={`listCoin ${
           item.price_change_percentage_24h > 0 ? "green2" : "red2"

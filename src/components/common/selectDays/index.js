@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
-function SelectDays({ onChange }) {
+function SelectDays({ onChange,bool=true}) {
   return (
     <div className="selectContainer">
-      <p>Price Change in the last</p>
+      <p style={{display:bool?"flex":"none"}}>Price Change in the last</p>
       <select onChange={onChange} className="selectDays">
         <option value={7}>7 days</option>
         <option value={30}>30 days</option>

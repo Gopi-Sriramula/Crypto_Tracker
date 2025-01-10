@@ -55,3 +55,9 @@ body {
   padding: 1rem 0rem;
   padding-bottom: 2.5rem;
 }
+.combinedCoins{
+  width: 93%;
+  margin: auto;
+  display: flex;
+  gap: 0.5rem;
+}

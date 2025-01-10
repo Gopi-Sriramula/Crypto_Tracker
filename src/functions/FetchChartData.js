@@ -1,7 +1,13 @@
 import axios from "axios";
 import convertDate from "./convertDate";
 
-const fetchChartData = async function (id, days,prices,setChartData) {
+const fetchChartData = async function (
+  id,
+  days,
+  prices,
+  setChartData,
+  bool = true
+) {
   try {
     const respondse = await axios({
       url: `https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=usd&currency=usd&days=${days}&interval=daily`,
@@ -12,22 +18,26 @@ const fetchChartData = async function (id, days,prices,setChartData) {
       },
     });
     const data = respondse.data;
-    setChartData({
-     labels: data[prices].map((item) => convertDate(item[0])),
-     datasets: [
-       {
-         data: data[prices].map((price) => price[1]),
-         borderColor: "#3a80e9",
-         borderWidth:1,
-         fill:true,
-         tension:0.25,
-         backgroundColor:"rgba(58,128,233,0.1)",
-         pointRadius:1,
-       },
-     ],
-   });
+    if (bool) {
+      setChartData({
+        labels: data[prices].map((item) => convertDate(item[0])),
+        datasets: [
+          {
+            data: data[prices].map((price) => price[1]),
+            borderColor: "#3a80e9",
+            borderWidth: 1,
+            fill: true,
+            tension: 0.25,
+            backgroundColor: "rgba(58,128,233,0.1)",
+            pointRadius: 1,
+            yAxisID: "crypto1",
+          },
+        ],
+      });
+    }
+    return respondse.data[prices];
   } catch (err) {
-     setChartData(null)
+    setChartData(null);
   }
 };
 export default fetchChartData;

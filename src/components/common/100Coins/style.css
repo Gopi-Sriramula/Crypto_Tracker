@@ -1,0 +1,23 @@
+.selectContainer{
+     display: flex;
+     gap: 1.5rem;
+     div{
+          display: flex;
+          gap: 0.7rem;
+          align-items: center;
+     }
+}
+.select{
+     background-color: transparent;
+     padding: 0.5rem;
+     color: var(--white);
+     font-size: large;
+     font-weight: 500;
+     width: 130px;
+     text-transform: capitalize;
+     border-radius: 0.5rem;
+}
+.option{
+     background-color: var(--white);
+     color: black;
+}
